@@ -14,6 +14,7 @@
     </header>
 
     <div class="content">
+		<button id="randomButton">Play Random Audio Journey</button>
         <!-- Audio Journey 1 -->
         <div class="card">
             <img src="Images/DALL·E 2023-10-31 14.51.11 - Photo of a raccoon comfortably resting under a tree with rays of sunlight seeping through the leaves, representing a state of regeneration and rejuven.png" alt="Photo of a raccoon comfortably resting under a tree with rays of sunlight seeping through the leaves, representing a state of regeneration and rejuven">
@@ -76,6 +77,21 @@
 
 
     </div>
+	<script>
+    document.getElementById("randomButton").addEventListener("click", function() {
+        var audioLinks = [
+            "https://soundcloud.com/springstoff/audio-journey-no-1-regeneration-invitation-to-pause/s-9XMpdHYroEZ?si=55d2993460324a4fa28d6e74401c964f",
+            "https://soundcloud.com/springstoff/audio-journey-no-2-focus-inviting-to-reflect/s-TzHmAooVSkc?si=56a2350155f6407eaf1e11cf3a167fed",
+            "https://soundcloud.com/springstoff/kawwana-audio-purpose-journey/s-y1Zx4lEoMRK?si=e4f7b3a4913246aeab44d489e0da162d",
+            "https://soundcloud.com/springstoff/september-journey-23/s-wKK4vsus3D2?si=cfec92218e3d4521935dfd48838a642d",
+            "https://soundcloud.com/springstoff/audio-journey-no5-self-efficacy-understanding-where-i-can-derive-impact/s-sM3INKkNi4M",
+            "https://soundcloud.com/springstoff/oktober-2/s-bo6hnrtJet5"
+        ];
+        var randomLink = audioLinks[Math.floor(Math.random() * audioLinks.length)];
+        window.open(randomLink, "_blank");
+    });
+	</script>
+
 </body>
 
 </html>
