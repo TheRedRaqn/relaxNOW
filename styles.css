@@ -108,3 +108,56 @@ header .now {
         display: inline-block;
     }
 }
+
+#darkModeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .card-title {
+    color: #ffffff;
+}
+
+.dark-mode .card-description {
+    color: #aaaaaa;
+}
+
+.dark-mode .listen-btn {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.dark-mode header h1 {
+    color: #ffffff;  /* This sets the "relax" text color */
+}
+
+.dark-mode header .now {
+    color: #E32636;  /* This keeps the "NOW" text color as Henkel Red */
+}
+
+.dark-mode #randomButton {
+    background-color: #ffffff;  /* White background in dark mode */
+    color: #1e1e1e;  /* Dark text in dark mode */
+}

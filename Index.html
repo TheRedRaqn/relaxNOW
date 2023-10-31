@@ -11,6 +11,7 @@
 <body>
     <header>
         <h1><span class="relax">relax</span><span class="now">NOW</span></h1>
+		<button id="darkModeToggle">🌙</button>
     </header>
 
     <div class="content">
@@ -90,7 +91,31 @@
         var randomLink = audioLinks[Math.floor(Math.random() * audioLinks.length)];
         window.open(randomLink, "_blank");
     });
+	
+	// Function to toggle dark mode
+	function toggleDarkMode() {
+		const body = document.body;
+		const toggleButton = document.getElementById('darkModeToggle');
+
+		if (body.classList.contains('dark-mode')) {
+			body.classList.remove('dark-mode');
+			toggleButton.textContent = "🌙";
+		} else {
+			body.classList.add('dark-mode');
+			toggleButton.textContent = "☀️";
+		}
+	}
+
+	// Event listener for the button
+	document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+
+	// Check for user's preferred color scheme
+	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		toggleDarkMode();
+	}
+
 	</script>
+
 
 </body>
 
