@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relax NOW</title>
     <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
 </head>
 
 <body>
@@ -110,10 +111,10 @@
 
 		if (body.classList.contains('dark-mode')) {
 			body.classList.remove('dark-mode');
-			toggleButton.textContent = "??"; // Sun icon
+			toggleButton.innerHTML = '<span style="color: gray;">\u263D</span>'; // Moon icon in white color
 		} else {
 			body.classList.add('dark-mode');
-			toggleButton.textContent = "??"; // Moon icon
+			toggleButton.innerHTML = '<span style="color: yellow;">\u2600</span>'; // Sun icon in yellow color
 		}
 	}
 

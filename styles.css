@@ -161,3 +161,12 @@ header .now {
     background-color: #ffffff;  /* White background in dark mode */
     color: #1e1e1e;  /* Dark text in dark mode */
 }
+
+/* CSS */
+.sun-icon {
+    color: yellow;
+}
+
+.moon-icon {
+    color: black;
+}
